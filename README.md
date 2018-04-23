@@ -7,6 +7,7 @@ play around with LDAP.
 Right now, it just sets up an LDAP server (root password `password`)
 and installs a single OU, user, group.
 
+
 ## To Do
 
 - Make user sample object addition idempotent.
@@ -17,3 +18,22 @@ and installs a single OU, user, group.
   Local login?
 - Hashed password storage?
 - Harden LDAP server.
+
+
+## Bringing up the Box
+
+```bash
+vagrant up
+vagrant ssh
+```
+
+## Quick Commands
+
+(Run these commands from inside the Vagrant box.)
+
+DB state:
+
+```bash
+ldapsearch -D cn=Manager,dc=jacki3,dc=com -w password \
+  "(objectclass=*)" -s children -b 'dc=jacki3,dc=com'
+```
