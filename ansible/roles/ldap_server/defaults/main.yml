@@ -1,0 +1,6 @@
+---
+
+base: "dc=jacki3,dc=com"
+
+# password 
+root_pw: "{SSHA}bvBVUAS+ccFevYkdavHU7MinvXzQWRuV"

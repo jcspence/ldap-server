@@ -1,0 +1,9 @@
+---
+
+- name: Updating vim-minimal (needed to install vim-enhanced.)
+  dnf: name=vim-minimal state=latest
+
+- name: Install software packages.
+  dnf: name="{{item}}"
+  with_items: "{{dnf_packages}}"
+

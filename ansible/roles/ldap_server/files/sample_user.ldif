@@ -1,0 +1,16 @@
+dn: uid=jackie,ou=users,dc=jacki3,dc=com
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: jackie
+uid: jackie
+uidNumber: 10000
+gidNumber: 1000
+homeDirectory: /home/jackie
+loginShell: /bin/bash
+gecos: Jackie Spence
+userPassword: {crypt}x
+shadowLastChange: 0
+shadowMax: 0
+shadowWarning: 0

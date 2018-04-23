@@ -1,0 +1,16 @@
+---
+
+# https://www.thegeekstuff.com/2015/02/openldap-add-users-groups/
+
+- name: Create example data.
+  command: ldapadd -D "cn=Manager,dc=jacki3,dc=com" -w password
+  args:
+    stdin: "{{ lookup('file', item) }}"
+  with_items:
+    - org.ldif
+    - users.ldif
+    - sample_user.ldif
+    - students.ldif
+
+#- name: Set password.
+#  command: ldappasswd -x -s password "uid=jackie,ou=users,dc=jacki3,dc=com"

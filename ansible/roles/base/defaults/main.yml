@@ -1,0 +1,7 @@
+---
+
+dnf_packages:
+    # For better admin'ing
+    - vim-enhanced
+    # So that the template ansible module works right.
+    - libselinux-python

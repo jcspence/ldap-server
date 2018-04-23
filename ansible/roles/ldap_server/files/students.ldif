@@ -1,0 +1,4 @@
+dn: cn=Students,ou=Users,dc=jacki3,dc=com
+cn: Students
+objectClass: groupOfNames
+member: cn=jackie,ou=Users,dc=jacki3,dc=com

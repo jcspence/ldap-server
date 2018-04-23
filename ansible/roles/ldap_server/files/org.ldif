@@ -1,0 +1,6 @@
+dn: dc=jacki3,dc=com 
+objectClass: dcObject
+objectClass: organization
+dc: jacki3
+o: jacki3
+
