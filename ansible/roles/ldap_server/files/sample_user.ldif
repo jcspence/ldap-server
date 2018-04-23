@@ -10,7 +10,7 @@ gidNumber: 1000
 homeDirectory: /home/jackie
 loginShell: /bin/bash
 gecos: Jackie Spence
-userPassword: {crypt}x
+userPassword: passw0rd
 shadowLastChange: 0
 shadowMax: 0
 shadowWarning: 0
